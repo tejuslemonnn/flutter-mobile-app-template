@@ -223,11 +223,13 @@ Main folders structure
        📂 animated_text
             📄 animated_text.dart
        📂 appbar
+            📄 custom_app_bar.dart
        📂 button
             📄 button_widget.dart
        📂 popup
             📄 main_popup.dart
        📂 scaffold
+            📄 custom_scaffold.dart
        📂 text
             📄 custom_text.dart
        📂 textFormField
