@@ -39,6 +39,13 @@ IconButton platformBackButton({
         );
 }
 
+Icon platformForwardIcon() {
+  return Platform.isIOS
+      ? const Icon(Icons.arrow_forward_ios)
+      : const Icon(Icons.arrow_forward);
+}
+
+/// It is especially useful in [BLoC] structure.
 Widget errorText(String errorMessage) {
   return Center(child: CustomText(errorMessage));
 }

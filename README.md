@@ -1,17 +1,22 @@
-# Flutter Mobile App Project Template (flutter_bloc, go_router, vexana, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
+# Flutter Mobile App Project Template (flutter_bloc, provider, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
 
 This is a battery included [Flutter](https://flutter.dev/) project template. To the default setup have been added:
 
 - [flutter_bloc](https://bloclibrary.dev/) - Predictable and Highly testable state management library for Dart.
+- [provider](https://pub.dev/packages/provider) - Functional state management library using InheritedWidget, which is the most preferred next to BLoC.
 - [go_router](https://pub.dev/packages/go_router) - Robust and customizable Flutter navigation package.
 - [vexana](https://pub.dev/packages/vexana) - A powerful http client package overwritten by the dio package.
+- [url_launcher](https://pub.dev/packages/url_launcher) - Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.
+- [connectivity_plus](https://pub.dev/packages/connectivity_plus) - This plugin allows Flutter apps to discover network connectivity and configure themselves accordingly. It can distinguish between cellular vs WiFi connection.
 - [json_serializable](https://pub.dev/packages/json_serializable) - Generates to/from json serialization code for our data models.
 - [easy_localization](https://pub.dev/packages/easy_localization) - Easy and Fast internationalization.
 - [bot_toast](https://pub.dev/packages/bot_toast) - Feature-Rich Toast/alert/notification/popup library for Flutter.
 - [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage) - A Flutter plugin to store data in secure storage (encrypted, not in plain text like shared_preferences). Eg. for storing user credentials, tokens...
+- [intl](https://pub.dev/packages/intl) - Provides internationalization and localization facilities, including message translation, plurals and genders, date/number formatting and parsing, and bidirectional text.
 - [sizer](https://pub.dev/packages/sizer) - A package for adapting screen and font size.
 - [flutter_svg](https://pub.dev/packages/flutter_svg) - For rendering SVG assets.
-- Some tooling for project initial setup.
+- [google_fonts](https://pub.dev/packages/google_fonts) - A Flutter package to use fonts from fonts.google.com.
+- [auto_size_text](https://pub.dev/packages/auto_size_text) - Flutter widget that automatically resizes text to fit perfectly within its bounds.
     - [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) - Generates iOS, Android, and Web-native code for customizing the native splash screen background color and splash image.
     - [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) - Fully flexible toolset for updating your Flutter app's launcher icons (Android and Ios).
     - [rename](https://pub.dev/packages/rename) - Change your flutter project's AppName and BundleId (IOS, Android, macOS and Web).
@@ -263,10 +268,9 @@ Main folders structure
        📂 theme
             📄 app_theme.dart
        📂 mixins
+            📄 launch_mixin.dart
             📄 safe_context_mixin.dart
             📄 state_mixin.dart
-       📂 utility
-            📄 utility.dart
     📄 dependency_injector.dart
     📄 locale_keys.g.dart
    📂 view
