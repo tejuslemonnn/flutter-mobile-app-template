@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobile_template/core/components/scaffold/custom_scaffold.dart';
 import 'package:flutter_mobile_template/core/components/text/custom_text.dart';
 
 class HomeView extends StatefulWidget {
@@ -11,9 +12,9 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return const CustomScaffold(
       body: Center(
-        child: CustomText("Zalisoft Mobile Team"),
+        child: CustomText("by Zalisoft Mobile Team"),
       ),
     );
   }

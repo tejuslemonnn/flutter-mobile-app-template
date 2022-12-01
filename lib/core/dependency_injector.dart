@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_mobile_template/core/base/bloc/auth/auth_bloc.dart';
-import 'package:flutter_mobile_template/core/base/service/auth/auth_service.dart';
+import 'package:flutter_mobile_template/core/base/services/auth/auth_service.dart';
 import 'package:flutter_mobile_template/view/home/bloc/home_bloc.dart';
 import 'package:flutter_mobile_template/view/home/service/home_service.dart';
 import 'package:provider/provider.dart';

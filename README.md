@@ -1,4 +1,4 @@
-# Flutter Mobile App Project Template (flutter_bloc, provider, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
+# Flutter Mobile App Project Template by Zalisoft (flutter_bloc, provider, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
 
 This is a battery included [Flutter](https://flutter.dev/) project template. To the default setup have been added:
 
@@ -221,7 +221,7 @@ Main folders structure
       📂 models
          📄 auth_response_model.dart
          📄 auth_response_model.g.dart
-      📂 service
+      📂 services
          📂 auth
             📄 auth_service.dart
     📂 components
@@ -256,15 +256,15 @@ Main folders structure
     📂 init
        📂 language
        📂 local_storage
-            📄 local_storage_manager.dart,
+            📄 local_storage_manager.dart
        📂 main_build
             📄 main_build.dart
-       📂 navigation
-            📄 navigation.dart
        📂 network
             📄 network_change_manager.dart
             📄 no_network_widget.dart
             📄 vexana_manager.dart
+       📂 routes
+            📄 routes.dart
        📂 theme
             📄 app_theme.dart
        📂 mixins
@@ -275,8 +275,8 @@ Main folders structure
     📄 locale_keys.g.dart
    📂 view
       📂 auth
-        📂 login
-        📂 register
+           📂 login
+           📂 register
       📂 home  
         📂 bloc
             📄 {home_bloc}.dart
@@ -296,13 +296,14 @@ Main folders structure
 📂 test 
       📂 auth
             📄 auth_service_test.dart 
-      📄 widget_test.dart 
 
 📄 flutter_launcher_icons.yaml
 
 📄 flutter_native_splash.yaml
 
 📄 pubspec.yaml
+
+📄 README.md
 
 ```
 
