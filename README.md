@@ -267,6 +267,9 @@ Main folders structure
             📄 routes.dart
        📂 theme
             📄 app_theme.dart
+            📄 styles.dart
+       📂 utils
+            📄 time_utils.dart
        📂 mixins
             📄 launch_mixin.dart
             📄 safe_context_mixin.dart
@@ -276,7 +279,9 @@ Main folders structure
    📂 view
       📂 auth
            📂 login
+            📄 login_view.dart
            📂 register
+            📄 register_view.dart
       📂 home  
         📂 bloc
             📄 {home_bloc}.dart
@@ -288,6 +293,7 @@ Main folders structure
         📂 service
             📄 home_service.dart
         📂 widgets
+            📄 home_card.dart 
         📄 home_view.dart 
    📄 main.dart
    📂 scripts

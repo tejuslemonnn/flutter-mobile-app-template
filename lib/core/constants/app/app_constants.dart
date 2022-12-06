@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppConstants {
   static AppConstants? _instance;
   static AppConstants get instance {
@@ -6,4 +8,6 @@ class AppConstants {
   }
 
   AppConstants._init();
+
+  Color mineShaft = const Color(0xFF333333);
 }

@@ -54,10 +54,16 @@ logControl(String message) {
   developer.log(message);
 }
 
+void logError(String? value) => developer.log("[ERROR] ${value ?? ""}");
+
+bool isLink(String str) => str.contains(RegExp(
+    r'^(https?:\/\/)?([\w\d_-]+)\.([\w\d_\.-]+)\/?\??([^#\n\r]*)?#?([^\n\r]*)'));
+
 SvgPicture buildSvgPicture(String path) {
   return SvgPicture.asset(path.toSvg);
 }
 
+/// This method can be further [customized]
 Image buildImageAsset(String path) {
   return Image.asset(path.toPng);
 }
@@ -115,4 +121,14 @@ String convertStringDateYMMd(String date) {
 
 String convertStringDate4(String date) {
   return DateFormat.Hm('tr_TR').format(DateTime.parse(date));
+}
+
+String printMap(Map<String, dynamic>? map) {
+  String str = '';
+  map?.forEach((key, value) => str += '$key: ${value.toString}, ');
+  return str;
+}
+
+String capitalize(String value) {
+  return '${value[0].toUpperCase()}${value.substring(1).toLowerCase()}';
 }
