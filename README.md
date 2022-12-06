@@ -227,6 +227,9 @@ Main folders structure
     📂 components
        📂 animated_text
             📄 animated_text.dart
+       📂 animations
+            📄 animated_scale.dart
+            📄 auto_fade.dart
        📂 appbar
             📄 custom_app_bar.dart
        📂 button
