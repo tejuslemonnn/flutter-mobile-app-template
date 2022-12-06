@@ -7,7 +7,7 @@ import 'package:flutter_mobile_template/view/home/service/home_service.dart';
 import 'package:provider/provider.dart';
 import 'package:vexana/vexana.dart';
 
-import 'init/network/vexana_manager.dart';
+import 'network/vexana_manager.dart';
 
 class DependencyInjector {
   static DependencyInjector? _instance;

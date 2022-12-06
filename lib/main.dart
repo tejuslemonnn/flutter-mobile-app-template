@@ -8,7 +8,7 @@ import 'package:flutter_mobile_template/core/init/theme/app_theme.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:sizer/sizer.dart';
 import 'core/base/bloc/app_bloc_observer.dart';
-import 'core/dependency_injector.dart';
+import 'core/init/dependency_injector.dart';
 import 'core/init/routes/routes.dart';
 
 void main() async {

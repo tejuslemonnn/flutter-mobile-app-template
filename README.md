@@ -273,11 +273,11 @@ Main folders structure
             📄 styles.dart
        📂 utils
             📄 time_utils.dart
-       📂 mixins
-            📄 launch_mixin.dart
-            📄 safe_context_mixin.dart
-            📄 state_mixin.dart
-    📄 dependency_injector.dart
+       📄 dependency_injector.dart
+    📂 mixins
+       📄 launch_mixin.dart
+       📄 safe_context_mixin.dart
+       📄 state_mixin.dart
     📄 locale_keys.g.dart
    📂 view
       📂 auth
