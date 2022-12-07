@@ -247,10 +247,10 @@ Main folders structure
        📂 app
             📄 app_constants.dart
        📂 enums
-            📄 api_enums.dart
             📄 color_enums.dart
             📄 icon_enums.dart
             📄 navigation_enums.dart
+            📄 network_enums.dart
             📄 network_results_enums.dart
     📂 extensions
             📄 color_extensions.dart

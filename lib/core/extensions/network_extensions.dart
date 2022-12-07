@@ -1,4 +1,4 @@
-import '../constants/enums/api_enums.dart';
+import '../constants/enums/network_enums.dart';
 
 extension NetworkExtensions on NetworkEnums {
   String get key {
