@@ -3,13 +3,15 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter_mobile_template/core/init/main_build/main_build.dart';
-import 'package:flutter_mobile_template/core/init/theme/app_theme.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:sizer/sizer.dart';
-import 'core/base/bloc/app_bloc_observer.dart';
-import 'core/init/dependency_injector.dart';
-import 'core/init/routes/routes.dart';
+
+import 'src/core/base/bloc/app_bloc_observer.dart';
+import 'src/core/constants/app/app_constants.dart';
+import 'src/core/init/dependency_injector.dart';
+import 'src/core/init/main_build/main_build.dart';
+import 'src/core/init/routes/routes.dart';
+import 'src/core/init/theme/app_theme.dart';
 
 void main() async {
   await _init();
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
         final botToastBuilder = BotToastInit();
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
-          title: 'Flutter Mobile App Template',
+          title: AppConstants.instance.appName,
           routerConfig: Routes.instance.routes,
           builder: (context, child) => botToastBuilder(
             context,

@@ -247,15 +247,12 @@ Main folders structure
        📂 app
             📄 app_constants.dart
        📂 enums
-            📄 color_enums.dart
             📄 icon_enums.dart
-            📄 navigation_enums.dart
             📄 network_enums.dart
             📄 network_results_enums.dart
+            📄 route_enums.dart
     📂 extensions
-            📄 color_extensions.dart
             📄 context_extensions.dart
-            📄 icon_extensions.dart
             📄 iterable_extensions.dart
             📄 network_extensions.dart
             📄 num_extensions.dart
@@ -277,6 +274,7 @@ Main folders structure
             📄 styles.dart
        📂 utils
             📄 time_utils.dart
+            📄 typedefs.dart
        📄 dependency_injector.dart
     📂 mixins
        📄 launch_mixin.dart

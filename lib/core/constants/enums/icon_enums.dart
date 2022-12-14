@@ -1,1 +1,0 @@
-enum IconEnums { menu }
