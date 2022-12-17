@@ -208,6 +208,7 @@ Main folders structure
       ...📄 {locale}.json
       
 📂 lib
+  📂 src  
    📂 core   
     📂 base
       📂 bloc
@@ -254,6 +255,7 @@ Main folders structure
     📂 extensions
             📄 context_extensions.dart
             📄 iterable_extensions.dart
+            📄 logging_extension.dart
             📄 network_extensions.dart
             📄 num_extensions.dart
             📄 string_extensions.dart

@@ -1,3 +1,4 @@
+import 'package:flutter_mobile_template/src/core/init/utils/typedefs.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:vexana/vexana.dart';
 
@@ -16,15 +17,15 @@ class AuthResponseModel extends INetworkModel<AuthResponseModel> {
   });
 
   @override
-  fromJson(Map<String, dynamic> json) {
+  fromJson(JsonMap json) {
     return _$AuthResponseModelFromJson(json);
   }
 
   @override
-  Map<String, dynamic> toJson() {
+  JsonMap toJson() {
     return _$AuthResponseModelToJson(this);
   }
 
-  factory AuthResponseModel.fromJson(Map<String, dynamic> json) =>
+  factory AuthResponseModel.fromJson(JsonMap json) =>
       _$AuthResponseModelFromJson(json);
 }

@@ -1,3 +1,4 @@
+import 'package:flutter_mobile_template/src/core/init/utils/typedefs.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:vexana/vexana.dart';
 
@@ -15,15 +16,14 @@ class HomeModel extends INetworkModel<HomeModel> {
   });
 
   @override
-  fromJson(Map<String, dynamic> json) {
+  fromJson(JsonMap json) {
     return _$HomeModelFromJson(json);
   }
 
   @override
-  Map<String, dynamic> toJson() {
+  JsonMap toJson() {
     return _$HomeModelToJson(this);
   }
 
-  factory HomeModel.fromJson(Map<String, dynamic> json) =>
-      _$HomeModelFromJson(json);
+  factory HomeModel.fromJson(JsonMap json) => _$HomeModelFromJson(json);
 }

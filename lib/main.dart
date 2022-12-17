@@ -13,7 +13,7 @@ import 'src/core/init/main_build/main_build.dart';
 import 'src/core/init/routes/routes.dart';
 import 'src/core/init/theme/app_theme.dart';
 
-void main() async {
+Future<void> main() async {
   await _init();
   Bloc.observer = AppBlocObserver.instance;
   runZoned(

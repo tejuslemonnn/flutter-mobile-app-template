@@ -4,10 +4,9 @@ import 'dart:developer' as developer;
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_mobile_template/src/core/extensions/string_extensions.dart';
+import 'package:flutter_mobile_template/src/core/init/utils/typedefs.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../../components/text/custom_text.dart';
 
 Widget platformIndicator() {
@@ -50,23 +49,8 @@ Widget errorText(String errorMessage) {
   return Center(child: CustomText(errorMessage));
 }
 
-logControl(String message) {
-  developer.log(message);
-}
-
-void logError(String? value) => developer.log("[ERROR] ${value ?? ""}");
-
 bool isLink(String str) => str.contains(RegExp(
     r'^(https?:\/\/)?([\w\d_-]+)\.([\w\d_\.-]+)\/?\??([^#\n\r]*)?#?([^\n\r]*)'));
-
-SvgPicture buildSvgPicture(String path) {
-  return SvgPicture.asset(path.toSvg);
-}
-
-/// This method can be further [customized]
-Image buildImageAsset(String path) {
-  return Image.asset(path.toPng);
-}
 
 animatedRouting({
   required GoRouterState state,
@@ -123,9 +107,9 @@ String convertStringDate4(String date) {
   return DateFormat.Hm('tr_TR').format(DateTime.parse(date));
 }
 
-String printMap(Map<String, dynamic>? map) {
+String printMap(JsonMap map) {
   String str = '';
-  map?.forEach((key, value) => str += '$key: ${value.toString}, ');
+  map.forEach((key, value) => str += '$key: ${value.toString}, ');
   return str;
 }
 
