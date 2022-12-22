@@ -235,6 +235,8 @@ Main folders structure
             📄 custom_app_bar.dart
        📂 button
             📄 button_widget.dart
+       📂 noNetwork
+            📄 no_network_widget.dart
        📂 popup
             📄 main_popup.dart
        📂 scaffold
@@ -273,9 +275,7 @@ Main folders structure
             📄 routes.dart
        📂 theme
             📄 app_theme.dart
-            📄 styles.dart
        📂 utils
-            📄 time_utils.dart
             📄 typedefs.dart
        📄 dependency_injector.dart
     📂 mixins

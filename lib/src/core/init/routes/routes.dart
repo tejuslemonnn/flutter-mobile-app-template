@@ -25,7 +25,7 @@ class Routes {
       GoRoute(
         path: RouteEnums.home.routeName,
         pageBuilder: (context, state) {
-          return animatedRouting(
+          return BaseFunctions.instance.animatedRouting(
             state: state,
             route: const HomeView(),
           );
