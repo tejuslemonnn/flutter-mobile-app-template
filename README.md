@@ -225,6 +225,8 @@ Main folders structure
       📂 services
          📂 auth
             📄 auth_service.dart
+      📂 singleton
+         📄 base_singleton.dart
     📂 components
        📂 animated_text
             📄 animated_text.dart
