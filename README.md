@@ -1,4 +1,4 @@
-# Flutter Mobile App Project Template by Zalisoft (flutter_bloc, provider, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
+# Flutter Mobile App Project Template by Zalisoft (flutter_bloc, provider, riverpod, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
 
 This is a battery included [Flutter](https://flutter.dev/) project template. To the default setup have been added:
 
@@ -45,9 +45,8 @@ dependencies:
   #Image
   flutter_svg: ^1.1.6
 
-  #State Management
-  provider: ^6.0.4
-  flutter_bloc: ^8.1.1
+  #Design
+  sensors_plus: ^1.4.0
 
   #JsonAnnotation
   json_annotation: ^4.7.0
@@ -70,6 +69,11 @@ dependencies:
   intl: ^0.17.0
   easy_localization: ^3.0.1
   bot_toast: ^4.0.3
+
+  #State Management
+  provider: ^6.0.4
+  flutter_riverpod: ^2.1.3
+  flutter_bloc: ^8.1.1
 
   #Native Splash Screen
   flutter_native_splash: ^2.2.13
@@ -228,11 +232,23 @@ Main folders structure
       📂 singleton
          📄 base_singleton.dart
     📂 components
-       📂 animated_text
-            📄 animated_text.dart
        📂 animations
-            📄 animated_scale.dart
-            📄 auto_fade.dart
+             📂 animatedLists
+                📄 animated_grid_view.dart
+                📄 animated_horizontal_list_view.dart
+                📄 animated_list_view.dart
+                📄 animated_scroll_view_item.dart
+             📂 animationUtils
+                📄 animate_in_effect.dart
+                📄 animated_scale.dart
+                📄 animated_text_wrapper.dart
+                📄 animated_text.dart
+                📄 auto_fade.dart
+                📄 fade_in_effect.dart
+                📄 gyroscope_effect_stream_builder.dart
+                📄 list_item_wrapper_widget.dart
+                📄 mouse_region_effect.dart
+             📂 provider
        📂 appbar
             📄 custom_app_bar.dart
        📂 button
@@ -251,6 +267,7 @@ Main folders structure
     📂 constants
        📂 app
             📄 app_constants.dart
+            📄 color_constants.dart
        📂 enums
             📄 icon_enums.dart
             📄 network_enums.dart

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/components/animations/animationUtils/animate_in_effect.dart';
 import '../../core/components/scaffold/custom_scaffold.dart';
 import '../../core/components/text/custom_text.dart';
 
@@ -14,8 +15,10 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return const CustomScaffold(
-      body: Center(
-        child: CustomText("by Zalisoft Mobile Team"),
+      body: AnimateInEffect(
+        child: Center(
+          child: CustomText("by Zalisoft Mobile Team"),
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../text/custom_text.dart';
+import '../../text/custom_text.dart';
 
 class AnimatedText extends StatefulWidget {
   const AnimatedText(
