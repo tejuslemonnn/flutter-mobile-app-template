@@ -1,7 +1,7 @@
 # Flutter Mobile App Project Template by Zalisoft (flutter_bloc, provider, riverpod, go_router, vexana, url_launcher, json_serializable, easy_localization bot_toast, flutter_secure_storage, connectivity_plus, intl, sizer, google_fonts, flutter_native_splash, flutter_launcher_icons and other generally used features and tools in production.)
 
+#[Medium](https://medium.com/@bedirhanssaglam/flutter-clean-application-architecture-baee7febef92)
 This is a battery included [Flutter](https://flutter.dev/) project template. To the default setup have been added:
-[Medium](https://medium.com/@bedirhanssaglam/flutter-clean-application-architecture-baee7febef92)
 
 - [flutter_bloc](https://bloclibrary.dev/) - Predictable and Highly testable state management library for Dart.
 - [provider](https://pub.dev/packages/provider) - Functional state management library using InheritedWidget, which is the most preferred next to BLoC.
